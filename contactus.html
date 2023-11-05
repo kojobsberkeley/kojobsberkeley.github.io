@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Kojobs Website</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel="stylesheet" href="contactus.css">
+        <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Red+Hat+Display">
+        <style>
+            body{
+                font-family: 'Red Hat Display';
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class = "topnav" id = "mytopnav">
+            <a class = "top" href="base.html" style="margin: 1px;"><img class ="logo" src = "Images/logoblack.png"></a>
+            <a class = "split" href="contactus.html" style="margin-right: 30px;">CONTACT US</a>
+            <a class = "split" href="joinus.html">JOIN US</a>
+            <div class="dropdown">
+                <button class="dropbtn">CORPORATE
+                <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                <a href="sponsors.html">Our Collaborators</a>
+                <a href="become.html">Become a Collaborator</a>
+                </div>
+            </div>
+            <a class = "split" href="#alumni">ALUMNI INFO</a>
+            <div class="dropdown">
+                <button class="dropbtn">OFFICERS
+                <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                <a href="presidents.html">Executives</a>
+                <a href="advisors.html">Advisors</a>
+                <a href="boards.html">Board Members</a>
+                </div>
+            </div>
+            <a class = "split" href="base.html">ABOUT US</a>
+            <a href="base:void(0);" class="icon" onclick="toggleTopNav()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+        <div class = "topinfo">
+            We would love to hear from you!
+        </div>
+
+        <br>
+        <hr style="width: 90%;">
+        <br>
+
+        <div class = "socials">
+            <div class = "socialsub">Our Socials</div>
+            <a href= "https://www.instagram.com/kojobs.berkeley/" class = "socialsub"><i class="fa fa-instagram fa-fw" aria-hidden="true"></i>Instagram</a>
+            <a href= "https://www.linkedin.com/company/kojobs" class = "socialsub"><i class="fa fa-linkedin-square fa-fw" aria-hidden="true"></i>LinkedIn</a>
+            <a href="mailto: kojobsatberkeley@gmail.com"class = "socialsub"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i>Email</a>
+        </div>
+        <br clear="left" />
+        <hr style="width: 90%;">
+        <br>
+
+        <div class = "left">
+            <p class ="topleft">Contact Us Now!</p>
+            <img src="Images/contact.jpeg" class = "image">
+        </div>
+
+        <div class = "email-container">
+            <form action="http://localhost/send_email.php" method="post">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your First Name">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your Last Name">
+                <label for="email">Email Address</label>
+                <input type="text" id="email" name="email_address" placeholder="Email Address">
+                
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Subject">
+                <label for="content">Content</label>
+                <textarea id="content" name="content" placeholder="Tell us more.." style="height:200px"></textarea>
+                <input type="submit" value="Send">
+            </form>
+        </div>
+
+        <br>
+        <br>
+        <hr style="width: 90%;">
+        <br>
+        <br>
+
+
+        <img src ="Images/logoblue.png" class="last-logo">
+
+        <div class="bottomnav">
+            <img class = "bottom-logo" src = "Images/logowhite.png">
+            <span class="bottomcredit">Created By: </span>
+            <span class="bottominfo">UC Berkeley Kojobs | kojobsatberkeley@gmail.com</span>
+        </div>
+
+        <script src="base.js">base</script>
+    </body>
+</html>
+

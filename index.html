@@ -1,7 +1,211 @@
 <!DOCTYPE html>
+
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+    <head>
+        <title>Kojobs Website</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Red+Hat+Display">
+        <style>
+            body{
+                font-family: 'Red Hat Display';
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class = "topnav" id = "mytopnav">
+            <a class = "top" href="base.html" style="margin: 1px;"><img class ="logo" src = "Images/logoblack.png"></a>
+            <a class = "split" href="contactus.html" style="margin-right: 30px;">CONTACT US</a>
+            <a class = "split" href="joinus.html">JOIN US</a>
+            <div class="dropdown">
+                <button class="dropbtn">CORPORATE
+                <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                <a href="sponsors.html">Our Collaborators</a>
+                <a href="become.html">Become a Collaborator</a>
+                </div>
+            </div>
+            <a class = "split" href="#alumni">ALUMNI INFO</a>
+            <div class="dropdown">
+                <button class="dropbtn">OFFICERS
+                <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                <a href="presidents.html">Executives</a>
+                <a href="advisors.html">Advisors</a>
+                <a href="boards.html">Board Members</a>
+                </div>
+            </div>
+            <a class = "split" href="base.html">ABOUT US</a>
+            <a href="base:void(0);" class="icon" onclick="toggleTopNav()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+        <div class = "slideshow-container">
+            <div class = "mySlides">
+                <img src = "Images/base1.jpg" style = "width: 100%"">
+            </div>
+            <div class = "mySlides">
+                <div class="caption">Welcome to Berkeley Kojobs!</div>
+                <img src = "Images/base2.jpg" style = "width: 100%"">
+            </div>
+            <div class = "mySlides">
+                <div class="caption2">Your Development Journey Starts Now!</div>
+                <img src = "Images/base3.jpg" style = "width: 100%"">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1);"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+        <br>
+        <br>
+        <hr style="width: 90%;">
+        <br>
+        <br>
+
+        <div class = "info-container-who">
+            <!--<div class = "title-who">
+                Who We Are
+            </div>-->
+            <div class = "info">
+                Founded in 2012, Kojobs at Berkeley is UC Berkeley’s student-run organization working to provide our members opportunities in career and academic advancement. 
+            </div>
+        </div>
+
+        <br>
+        <hr style="width: 90%;">
+        <br>
+        <br>
+
+        <div class = "info2">
+                <div class = "subinfo"><i class="fa fa-book" aria-hidden="true"></i> 10+ Years</div>
+                <div class = "subinfo"><i class="fa fa-child" aria-hidden="true"></i> 100+ members</div>
+                <div class = "subinfo"><i class="fa fa-male" aria-hidden="true"></i> 20+ officers</div>
+                <div class = "subinfo"><i class="fa fa-users" aria-hidden="true"></i> 1 Community</div>
+        </div>
+
+        <br>
+        <br>
+        <hr style="width: 90%;">
+        <br>
+        <br>
+
+        <div class = "title-value">
+            Our Values
+        </div>
+
+        <div class = "values">
+            <div class= "value-card">
+                <img class ="photo" src="Images/prof.png" alt="photo" style="width:100%">
+                <p class="value-head">Professionalism</p>
+                <p class="value-desc">Inspire each other to grow professionally by promoting an environment of excellence and accountability</p>
+            </div>
+            <div class= "value-card">
+                <img class ="photo" src="Images/net.png" alt="photo" style="width:100%">
+                <p class="value-head">Networking</p>
+                <p class="value-desc">Collaborate with others to support each other's growth and foster a community of practice</p>
+            </div>
+            <div class= "value-card">
+                <img class ="photo" src="Images/dev.png" alt="photo" style="width:100%">
+                <p class="value-head">Development</p>
+                <p class="value-desc">Strive to learn new info, ask questions, retain knowledge, share with peers, and educate others</p>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <hr style="width: 90%;">
+        <br>
+        <br>
+
+        <div class = "mission-container">
+            <div class = "mission">
+                <div class = "title-mission">
+                    Our Mission
+                </div>
+                <div class = "info-mission">
+                    <p>
+                        Our mission is to empower students to discover and pursue a path to a fulfilling career
+                        by educating and supporting students to explore and develop as professionals.
+                        We provide opportunities to gain valuable “real-life” experiences within and through the organization</li>
+                        by hosting various on-campus and online events and leading projects with diverse industry focus. 
+                    </p>
+                </div>
+            </div>
+            <img src ="Images/event4.jpeg" class ="mission-img">
+        </div>
+
+        <br>
+        <br>
+        <hr style="width: 90%;">
+        <br>
+        <br>
+        
+        <div class = "title-partner">
+            Our Campus Partners
+        </div>
+        <br>
+        <div class = "partner">
+            <div class = "subpartner"><img src ="Images/logo_school/ucb.jpg" class = "school-logo"></div>
+            <div class = "subpartner"><img src ="Images/logo_school/ucd.jpg" class = "school-logo"></div>
+            <div class = "subpartner"><img src ="Images/logo_school/ucla.jpg" class = "school-logo"></div>
+            <div class = "subpartner"><img src ="Images/logo_school/ucsd.jpg" class = "school-logo"></div>
+            <div class = "subpartner"><img src ="Images/logo_school/ui.jpg" class = "school-logo"></div>
+            <div class = "subpartner"><img src ="Images/logo_school/usc.jpg" class = "school-logo"></div>
+            <div class = "subpartner"><img src ="Images/logo_school/uw.jpg" class = "school-logo"></div>
+        </div>
+
+        <br>
+        <br>
+        <hr style="width: 90%;">
+        <br>
+        <br>
+
+        <div class = "weare">
+            <div class = "we-are-one">
+                We are Diverse
+            </div>
+            <div class = "we-are-two">
+                We are Catalysts
+            </div>
+            <div class = "we-are-three">
+                We are a Team
+            </div>
+            <div class = "we-are-four">
+                We are KOJOBS
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <hr style="width: 90%;">
+        <br>
+        <br>
+
+
+        <img src ="Images/logoblue.png" class="last-logo">
+
+
+        <br>
+        <br>
+
+        <div class="bottomnav">
+            <img class = "bottom-logo" src = "Images/logowhite.png">
+            <span class="bottomcredit">Created By: </span>
+            <span class="bottominfo">UC Berkeley Kojobs | kojobsatberkeley@gmail.com</span>
+        </div>
+        <script src="base.js">base</script>
+        <script src="slideshow.js">ss</script>
+    </body>
 </html>
+

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Kojobs Website</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel="stylesheet" href="joinus.css">
+        <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Red+Hat+Display">
+        <style>
+            body{
+                font-family: 'Red Hat Display';
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class = "topnav" id = "mytopnav">
+            <a class = "top" href="base.html" style="margin: 1px;"><img class ="logo" src = "Images/logoblack.png"></a>
+            <a class = "split" href="contactus.html" style="margin-right: 30px;">CONTACT US</a>
+            <a class = "split" href="joinus.html">JOIN US</a>
+            <div class="dropdown">
+                <button class="dropbtn">CORPORATE
+                <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                <a href="sponsors.html">Our Collaborators</a>
+                <a href="become.html">Become a Collaborator</a>
+                </div>
+            </div>
+            <a class = "split" href="#alumni">ALUMNI INFO</a>
+            <div class="dropdown">
+                <button class="dropbtn">OFFICERS
+                <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="presidents.html">Executives</a>
+                    <a href="advisors.html">Advisors</a>
+                    <a href="boards.html">Board Members</a>
+                </div>
+            </div>
+            <a class = "split" href="base.html">ABOUT US</a>
+            <a href="base:void(0);" class="icon" onclick="toggleTopNav()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+        <div class="top_text" style="margin-top: 100px;">
+            Join Us
+        </div>
+
+        <br>
+        <hr style="width: 90%;">
+        <br>
+
+        <div class="deadline">
+            Apply by <span style="color: navy;">January 1st, 11:59pm</span>
+        </div>
+
+        <br>
+        <hr style="width: 90%;">
+
+        <img src ="Images/base3.jpg" class = "left_image">
+
+        <div class="right">
+            <p class = "right_text">Application Due In</p>
+            <div>
+                <p class = "timer" id="clock"></p>
+            </div>
+        </div>
+
+        <br clear="left" />
+
+        <br>
+        <hr style="width: 90%;">
+        <br>
+
+
+
+        <div class = "applycards">
+            <div class= "card">
+                <p class="title">Returning Members</p>
+                <img class ="photo" src="Images/returning.png" alt="photo" style="width:70%">
+                <a href ="https://docs.google.com/forms/d/e/1FAIpQLSddKHA8gu9ByDt6wNlrovdx9E9AwhhrP_XPCbUxXiG0rQ_QOg/viewform?usp=sf_link">
+                    <button class="apply">Apply Now</button>
+                </a>
+                <p class="info">Was a Kojobs Member for Fall 2023</p>
+                <p class ="box"></p>
+            </div>
+            <div class= "card">
+                <p class="title">New Members</p>
+                <img class ="photo" src="Images/new.png" alt="photo" style="width:70%">
+                <a href ="https://docs.google.com/forms/d/e/1FAIpQLSdgDha-K_Da6PWYszSTyBBQ7vLyJ3d0nePv5Lhwk7Ux96GMAg/viewform?usp=sf_link">
+                    <button class="apply">Apply Now</button>
+                </a>
+                <p class="info">New to Kojobs</p>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <hr style="width: 90%;">
+        <br>
+        <br>
+        
+        <img src ="Images/logoblue.png" class="last-logo">
+
+
+        <div class="bottomnav">
+            <img class = "bottom-logo" src = "Images/logowhite.png">
+            <span class="bottomcredit">Created By: </span>
+            <span class="bottominfo">UC Berkeley Kojobs | kojobsberkeley@gmail.com</span>
+        </div>
+
+        <script src="base.js">base</script>
+        <script src ="clock.js">clock</script>
+    </body>
+</html>
