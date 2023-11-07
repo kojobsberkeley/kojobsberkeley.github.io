@@ -9,6 +9,8 @@
         <link rel="stylesheet" href="index.css">
         <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Red+Hat+Display">
+
+        <!--set font for entire page-->
         <style>
             body{
                 font-family: 'Red Hat Display';
@@ -17,6 +19,8 @@
     </head>
 
     <body>
+
+        <!--html code for topnav *DO NOT CHANGE-->
         <div class = "topnav" id = "mytopnav">
             <a class = "top" href="index.html" style="margin: 1px;"><img class ="logo" src = "Images/logoblack.png"></a>
             <a class = "split" href="contactus.html" style="margin-right: 30px;">CONTACT US</a>
@@ -42,11 +46,15 @@
                 </div>
             </div>
             <a class = "split" href="index.html">ABOUT US</a>
+            <!--Uses base.js-->
             <a href="base:void(0);" class="icon" onclick="toggleTopNav()">
                 <i class="fa fa-bars"></i>
             </a>
         </div>
+        <!--End of topnav-->
 
+        <!--photo slideshow-->
+        <!--uses slideshow.js-->
         <div class = "slideshow-container">
             <div class = "mySlides">
                 <img src = "Images/base1.jpg" style = "width: 100%"">
@@ -67,17 +75,16 @@
                 <span class="dot" onclick="currentSlide(3)"></span>
             </div>
         </div>
+        <!--end of photo slideshow-->
+
         <br>
         <br>
         <hr style="width: 90%;">
         <br>
         <br>
 
-        <div class = "info-container-who">
-            <!--<div class = "title-who">
-                Who We Are
-            </div>-->
-            <div class = "info">
+        <div class = "container-who">
+            <div class = "text-who">
                 Founded in 2012, Kojobs at Berkeley is UC Berkeley’s student-run organization working to provide our members opportunities in career and academic advancement. 
             </div>
         </div>
@@ -87,38 +94,12 @@
         <br>
         <br>
 
-        <div class = "info2">
-                <div class = "subinfo"><i class="fa fa-book" aria-hidden="true"></i> 10+ Years</div>
-                <div class = "subinfo"><i class="fa fa-child" aria-hidden="true"></i> 100+ members</div>
-                <div class = "subinfo"><i class="fa fa-male" aria-hidden="true"></i> 20+ officers</div>
-                <div class = "subinfo"><i class="fa fa-users" aria-hidden="true"></i> 1 Community</div>
-        </div>
-
-        <br>
-        <br>
-        <hr style="width: 90%;">
-        <br>
-        <br>
-
-        <div class = "title-value">
-            Our Values
-        </div>
-
-        <div class = "values">
-            <div class= "value-card">
-                <img class ="photo" src="Images/prof.png" alt="photo" style="width:100%">
-                <p class="value-head">Professionalism</p>
-                <p class="value-desc">Inspire each other to grow professionally by promoting an environment of excellence and accountability</p>
-            </div>
-            <div class= "value-card">
-                <img class ="photo" src="Images/net.png" alt="photo" style="width:100%">
-                <p class="value-head">Networking</p>
-                <p class="value-desc">Collaborate with others to support each other's growth and foster a community of practice</p>
-            </div>
-            <div class= "value-card">
-                <img class ="photo" src="Images/dev.png" alt="photo" style="width:100%">
-                <p class="value-head">Development</p>
-                <p class="value-desc">Strive to learn new info, ask questions, retain knowledge, share with peers, and educate others</p>
+        <div class = "container-info">
+            <div class = "grid-info">
+                    <div class = "text-info"><i class="fa fa-book" aria-hidden="true"></i> 10+ Years</div>
+                    <div class = "text-info"><i class="fa fa-child" aria-hidden="true"></i> 100+ members</div>
+                    <div class = "text-info"><i class="fa fa-male" aria-hidden="true"></i> 20+ officers</div>
+                    <div class = "text-info"><i class="fa fa-users" aria-hidden="true"></i> 1 Community</div>
             </div>
         </div>
 
@@ -128,12 +109,42 @@
         <br>
         <br>
 
-        <div class = "mission-container">
-            <div class = "mission">
+        
+        <div class ="container-value">
+            <div class = "title-value">
+                Our Values
+            </div>
+            <div class = "grid-value">
+                <div class= "card-value">
+                    <img class ="photo" src="Images/prof.png" alt="photo" style="width:100%">
+                    <p class="head-value">Professionalism</p>
+                    <p class="desc-value">Inspire each other to grow professionally by promoting an environment of excellence and accountability</p>
+                </div>
+                <div class= "card-value">
+                    <img class ="photo" src="Images/net.png" alt="photo" style="width:100%">
+                    <p class="head-value">Networking</p>
+                    <p class="desc-value">Collaborate with others to support each other's growth and foster a community of practice</p>
+                </div>
+                <div class= "card-value">
+                    <img class ="photo" src="Images/dev.png" alt="photo" style="width:100%">
+                    <p class="head-value">Development</p>
+                    <p class="desc-value">Strive to learn new info, ask questions, retain knowledge, share with peers, and educate others</p>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <hr style="width: 90%;">
+        <br>
+        <br>
+
+        <div class = "container-mission">
+            <div class = "left-mission">
                 <div class = "title-mission">
                     Our Mission
                 </div>
-                <div class = "info-mission">
+                <div class = "text-mission">
                     <p>
                         Our mission is to empower students to discover and pursue a path to a fulfilling career
                         by educating and supporting students to explore and develop as professionals.
@@ -142,7 +153,7 @@
                     </p>
                 </div>
             </div>
-            <img src ="Images/event4.jpeg" class ="mission-img">
+            <img src ="Images/event4.jpeg" class ="img-mission">
         </div>
 
         <br>
@@ -151,18 +162,20 @@
         <br>
         <br>
         
-        <div class = "title-partner">
-            Our Campus Partners
-        </div>
-        <br>
-        <div class = "partner">
-            <div class = "subpartner"><img src ="Images/logo_school/ucb.jpg" class = "school-logo"></div>
-            <div class = "subpartner"><img src ="Images/logo_school/ucd.jpg" class = "school-logo"></div>
-            <div class = "subpartner"><img src ="Images/logo_school/ucla.jpg" class = "school-logo"></div>
-            <div class = "subpartner"><img src ="Images/logo_school/ucsd.jpg" class = "school-logo"></div>
-            <div class = "subpartner"><img src ="Images/logo_school/ui.jpg" class = "school-logo"></div>
-            <div class = "subpartner"><img src ="Images/logo_school/usc.jpg" class = "school-logo"></div>
-            <div class = "subpartner"><img src ="Images/logo_school/uw.jpg" class = "school-logo"></div>
+        <div class ="container-partner">
+            <div class = "title-partner">
+                Our Campus Partners
+            </div>
+            <br>
+            <div class = "grid-partner">
+                <div><img src ="Images/logo_school/ucb.jpg" class = "img-partner"></div>
+                <div><img src ="Images/logo_school/ucd.jpg" class = "img-partner"></div>
+                <div><img src ="Images/logo_school/ucla.jpg" class = "img-partner"></div>
+                <div><img src ="Images/logo_school/ucsd.jpg" class = "img-partner"></div>
+                <div><img src ="Images/logo_school/ui.jpg" class = "img-partner"></div>
+                <div><img src ="Images/logo_school/usc.jpg" class = "img-partner"></div>
+                <div><img src ="Images/logo_school/uw.jpg" class = "img-partner"></div>
+            </div>
         </div>
 
         <br>
@@ -171,18 +184,20 @@
         <br>
         <br>
 
-        <div class = "weare">
-            <div class = "we-are-one">
-                We are Diverse
-            </div>
-            <div class = "we-are-two">
-                We are Catalysts
-            </div>
-            <div class = "we-are-three">
-                We are a Team
-            </div>
-            <div class = "we-are-four">
-                We are KOJOBS
+        <div class = "container-weare">
+            <div class ="grid-weare">
+                <div class = "we-are-one">
+                    We are Diverse
+                </div>
+                <div class = "we-are-two">
+                    We are Catalysts
+                </div>
+                <div class = "we-are-three">
+                    We are a Team
+                </div>
+                <div class = "we-are-four">
+                    We are KOJOBS
+                </div>
             </div>
         </div>
 
