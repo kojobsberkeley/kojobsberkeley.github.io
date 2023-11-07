@@ -1,13 +1,7 @@
-.logo{
-    display: inline-block;
-    vertical-align: top;
-    width: 150px;
-    height: 60px;
-    top: 0;
-}
+/*DO NOT CHANGE BELOW (until line 180)*/
 
-
-.topnav {
+  /*topnav */
+  .topnav {
     background-color: white;
     top: 0;
     width: 100%;
@@ -15,6 +9,15 @@
     position: fixed;
     z-index: 1;
 }
+
+.logo{
+  display: inline-block;
+  vertical-align: top;
+  width: 150px;
+  height: 60px;
+  top: 0;
+}
+
 .topnav a {
     float: left;
     display: block;
@@ -25,18 +28,17 @@
     font-size: 16px;
     margin-top: 20px;
   }
-  
+
   /* Change the color of links on hover */
   .topnav a:hover {
     background-color: rgba(0,0,0,0.2);
     color: black;
   }
 
-
   .topnav a.split{
     float: right;
   }
-  
+
   /* Hide the link that should open and close the topnav on small screens */
   .topnav .icon {
     display: none;
@@ -130,9 +132,13 @@
     display: block;
   }
 
+  /*topnav*/
 
+  /**/
+  /**/
+  /**/
 
-/*bottom nav */
+  /*bottom nav */
   .bottomnav{
     background-color: #003261;
     overflow: hidden;
@@ -164,32 +170,53 @@
     color: white;
   }
   /*bottom nav */
+
+  .last-logo{
+    width: 30%;
+    height: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+/*DO NOT CHANGE ABOVE*/
   
 
   /*prez -------------------------------------------------------*/
 
-  .meet{
+  /*container-meet*/
+  .container-meet{
+    margin-top: 10%;
+  }
+
+  .text-meet{
     color: black;
     text-align: center;
     font-size: 40px;
   }
+  /*container-meet*/
 
-  .infocards{
+  /**/
+  /**/
+  /**/
+
+  /*container-infocard*/
+  .grid-infocard{
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr; 
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 
   .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 250px;
+    max-width: 80%;
     margin: auto;
     text-align: center;
   }
   
   .photo{
-    margin-top: 10px;
+    margin-top: 1%;
   }
   
   .title {
@@ -229,13 +256,6 @@
     width: 60%;
     color: navy;
   }
+  /*container-infocard*/
 
-  .last-logo{
-    width: 30%;
-    height: 15%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    margin-bottom: 50px;
-  }
   
