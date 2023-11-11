@@ -185,40 +185,63 @@
 
   /*prez -------------------------------------------------------*/
 
-  .top_text {
+  /*container-top*/
+  .container-top{
+    margin-top: 8%;
+  }
+
+  .text-top {
     font-size: 60px;
     text-align: center;
     color: white;
     background-color: #003261;
     padding: 3%;
   }
+  /*container-top*/
 
-  .thank{
+  /**/
+  /**/
+  /**/
+
+  /*container-thanks*/
+  .text-thanks{
     font-size: 30px;
     text-align: center;
   }
+  /*container-thanks*/
+  
+  /**/
+  /**/
+  /**/
 
-  .help{
+  /*container-help*/
+  .text-help{
     font-size: 25px;
     float: left;
     margin-left: 2%;
     margin-right: 1%;
   }
 
-  .help_top{
+  .title-help{
     font-size: 30px;
     color: navy;
   }
 
-  .help_img{
+  .img-help{
     width: 37%;
     float: right;
     margin-right: 3%;
     border: 5px solid #003261;
     box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
   }
+  /*container-help*/
 
-  .value_img{
+  /**/
+  /**/
+  /**/
+
+  /*container-value*/
+  .img-value{
     width: 35%;
     float: left;
     margin-left: 3%;
@@ -226,19 +249,25 @@
     box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
   }
 
-  .value_top{
+  .title-value{
     font-size: 30px;
     color: navy;
     margin-left: 1%;
   }
 
-  .value{
+  .text-value{
     font-size: 25px;
     float: right;
     margin-right: 3%;
   }
+  /*container-value*/
 
-  .interest{
+  /**/
+  /**/
+  /**/
+
+  /*container-interest*/
+  .text-interest{
     font-size: 40px;
     color: black;
     margin-left: 3%;
@@ -246,13 +275,14 @@
     width: 65%;
   }
   
-  .interestbutton{
+  .button-interest{
     float: left;
+    /*prob need to fix this margin */
     margin-right: 3%;
     margin-top: 1%;
   }
 
-  .start{
+  .button-button-interest{
     text-align: center;
     background-color: #022648;
     color: white;
@@ -260,17 +290,11 @@
     font-size: 30px;
   }
 
-  .start:hover{
+  .button-button-interest:hover{
     background-color: #000d19;
   }
+  /*container-interest*/
 
-  .last-logo{
-    width: 30%;
-    height: 15%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-  }
 
 
 
