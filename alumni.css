@@ -1,0 +1,103 @@
+@import "index.css";
+
+/* Resetting Box Model for Consistency */
+* {
+    box-sizing: border-box;
+}
+
+/* Styling for italic text */
+i {
+    font-style: italic;
+}
+
+/* Styling for Search Container */
+.search-container {
+    text-align: right;
+    margin: 20px;
+    margin-top: 100px;
+}
+
+/* Search Input Styling */
+#searchInput {
+    padding: 10px;
+    margin-top: 10px;
+    width: 300px; /* Adjust as needed */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+
+/* People Wrapper Styling */
+.people-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align the content */
+    margin-top: 20px;
+}
+
+/* Styling for the cards wrapper */
+.cards-wrapper {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap onto the next line */
+    justify-content: center; /* Center the cards horizontally */
+    margin: 20px; /* Margin for the entire wrapper */
+    max-width: calc(100% - 40px); /* Full width minus left and right margins */
+    width: 100%; /* Full width of the container */
+    gap: 10px; /* Space between cards */
+    background: white;
+}
+
+/* Styling for individual cards */
+.card {
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 14px rgba(0,0,0,.1);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px; /* Bottom margin for spacing between rows */
+    padding: 30px;
+    text-align: center;
+    background: white;
+    flex: 1 0 21%; /* Flex-grow, flex-shrink, and basis */
+    max-width: 300px; /* Maximum width of each card */
+    min-width: 300px;
+}
+
+/* Header Styling */
+.header {
+    margin-top: 30px;
+    width: 100%; /* Make header full width */
+    text-align: left;
+    background: white
+}
+
+/* CSS for hidden state and transition effect */
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+  
+  /* CSS for the visible state */
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+/* General Body Styling */
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    margin: 0;
+}
+
+/* Color Variables */
+:root {
+    --main-bg-color: #fff;
+    --accent-bg-color: #e9f6ff;
+    --main-color: #3e9ec4;
+    --accent-color: #016f9b;
+}
