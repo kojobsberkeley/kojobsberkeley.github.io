@@ -101,6 +101,11 @@ body {
     --main-color: #3e9ec4;
     --accent-color: #016f9b;
 }
+
+
 .titles{
+    font-size: 40px;
+    padding: 50px;
+    margin-top: 50px;
     text-align: center;
 }
