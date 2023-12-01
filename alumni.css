@@ -43,7 +43,7 @@ i {
     margin: 20px; /* Margin for the entire wrapper */
     max-width: calc(100% - 40px); /* Full width minus left and right margins */
     width: 100%; /* Full width of the container */
-    gap: 10px; /* Space between cards */
+    gap: 20px; /* Space between cards */
     background: white;
 }
 
@@ -59,7 +59,7 @@ i {
     text-align: center;
     background: white;
     flex: 1 0 21%; /* Flex-grow, flex-shrink, and basis */
-    max-width: 300px; /* Maximum width of each card */
+    max-width: 400px; /* Maximum width of each card */
     min-width: 300px;
 }
 
@@ -100,4 +100,12 @@ body {
     --accent-bg-color: #e9f6ff;
     --main-color: #3e9ec4;
     --accent-color: #016f9b;
+}
+
+
+.titles{
+    font-size: 40px;
+    padding: 50px;
+    margin-top: 50px;
+    text-align: center;
 }
