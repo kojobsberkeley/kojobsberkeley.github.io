@@ -3,62 +3,43 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Sample. Need to use csv file
     const alumni = [
-        { name: "Alumni1", title: "Title1", bio: "Bio1", linkedIn: "linkedin1", imageName: "image1.jpg", year: "2020" },
-        { name: "Alumni2", title: "Title2", bio: "Bio2", linkedIn: "linkedin2", imageName: "image2.jpg", year: "2019" },
-        { name: "Alumni3", title: "Title3", bio: "Bio3", linkedIn: "linkedin3", imageName: "image3.jpg", year: "2018" },
-        { name: "Alumni4", title: "Title4", bio: "Bio4", linkedIn: "linkedin4", imageName: "image4.jpg", year: "2018" },
-        { name: "Alumni5", title: "Title5", bio: "Bio5", linkedIn: "linkedin5", imageName: "image5.jpg", year: "2019" },
-        { name: "Alumni5", title: "Title5", bio: "Bio5", linkedIn: "linkedin5", imageName: "image5.jpg", year: "2019" },
-        { name: "Alumni9", title: "Title5", bio: "Bio5", linkedIn: "linkedin5", imageName: "image5.jpg", year: "2017" },
-        { name: "Alumni9", title: "Title5", bio: "Bio5", linkedIn: "linkedin5", imageName: "image5.jpg", year: "2017" },
-        { name: "Alumni9", title: "Title5", bio: "Bio5", linkedIn: "linkedin5", imageName: "image5.jpg", year: "2017" },
-        { name: "Alumni9", title: "Title5", bio: "Bio5", linkedIn: "linkedin5", imageName: "image5.jpg", year: "2017" },
-        { name: "Alumni9", title: "Title5", bio: "Bio5", linkedIn: "linkedin5", imageName: "image5.jpg", year: "2017" },
-        { name: "Alumni9", title: "Title5", bio: "Bio5", linkedIn: "linkedin5", imageName: "image5.jpg", year: "2017" },
-        { name: "Alumni5", title: "Title5", bio: "Bio5", linkedIn: "linkedin5", imageName: "image5.jpg", year: "2019" },
-        { name: "Alumni5", title: "Title5", bio: "Bio5", linkedIn: "linkedin5", imageName: "image5.jpg", year: "2019" },
-        { name: "Alumni9", title: "Title5", bio: "Bio5", linkedIn: "linkedin5", imageName: "image5.jpg", year: "2017" },
+        { name: "John Smith", title: "Business", bio: "Google", linkedIn: "linkedin1", imageName: "image1.jpg", year: "2020" },
+        { name: "Emily Johnson", title: "Computer Science", bio: "Apple", linkedIn: "linkedin2", imageName: "image2.jpg", year: "2019" },
+        { name: "Michael Brown", title: "Data Science", bio: "Facebook", linkedIn: "linkedin3", imageName: "image3.jpg", year: "2018" },
+        { name: "Sarah Davis", title: "Business", bio: "Amazon", linkedIn: "linkedin4", imageName: "image4.jpg", year: "2018" },
+        { name: "Daniel Miller", title: "Computer Science", bio: "Netflix", linkedIn: "linkedin5", imageName: "image5.jpg", year: "2019" },
+        { name: "Olivia Wilson", title: "Business", bio: "Apple", linkedIn: "linkedin6", imageName: "image6.jpg", year: "2021" },
+        { name: "William Jones", title: "Data Science", bio: "Google", linkedIn: "linkedin7", imageName: "image7.jpg", year: "2020" },
+        { name: "Sophia Garcia", title: "Computer Science", bio: "Amazon", linkedIn: "linkedin8", imageName: "image8.jpg", year: "2019" },
+        { name: "James Martinez", title: "Business", bio: "Facebook", linkedIn: "linkedin9", imageName: "image9.jpg", year: "2022" },
+        { name: "Isabella Rodriguez", title: "Data Science", bio: "Netflix", linkedIn: "linkedin10", imageName: "image10.jpg", year: "2018" },
+        { name: "Benjamin Lee", title: "Computer Science", bio: "Amazon", linkedIn: "linkedin11", imageName: "image11.jpg", year: "2021" },
+        { name: "Charlotte Thomas", title: "Business", bio: "Google", linkedIn: "linkedin12", imageName: "image12.jpg", year: "2022" }
         // ... more alumni ...
     ];
 
-    // Group alumni by year
-    const alumniByYear = alumni.reduce((acc, alum) => {
-        acc[alum.year] = acc[alum.year] || [];
-        acc[alum.year].push(alum);
-        return acc;
-    }, {});
+    // Create a card wrapper
+    const cardsWrapper = document.createElement('div');
+    cardsWrapper.className = 'cards-wrapper reveal';
 
-    // Sort and display each year and its alumni
-    Object.keys(alumniByYear).sort().reverse().forEach(year => {
-        // Create a header for each year with fade-in effect
-        const yearHeader = document.createElement('div');
-        yearHeader.className = 'header reveal'; // Moved inside the loop
-        yearHeader.innerHTML = `<h1>Class of ${year}</h1>`;
-        peopleWrapper.appendChild(yearHeader);
-
-        // Create a card wrapper for each year with fade-in effect
-        const cardsWrapper = document.createElement('div');
-        cardsWrapper.className = 'cards-wrapper reveal'; // Moved inside the loop
-
-        // Add cards to the card wrapper
-        alumniByYear[year].forEach(alum => {
-            const card = document.createElement('div');
-            card.className = 'card';
-            card.innerHTML = `
-                <div>
-                    <img src="images/Temp/Staff_Card.jpg" alt="${alum.name}">
-                </div>
-                <h2>${alum.name}</h2>
-                <h3>${alum.title}</h3>
-                <p>${alum.bio}</p>
-                <a href="https://www.linkedin.com/in/${alum.linkedIn}" target="_blank">LinkedIn: @${alum.linkedIn}</a>
-            `;
-            cardsWrapper.appendChild(card);
-        });
-
-        peopleWrapper.appendChild(cardsWrapper);
-        peopleWrapper.appendChild(document.createElement('br'));
+    // Add cards to the card wrapper
+    alumni.forEach(alum => {
+        const card = document.createElement('div');
+        card.className = 'card';
+        card.innerHTML = `
+            <div>
+                <img src="images/Temp/Staff_Card.jpg" alt="${alum.name}">
+            </div>
+            <h2>${alum.name}</h2>
+            <h3>${alum.title}</h3>
+            <p>${alum.bio}</p>
+            <a href="https://www.linkedin.com/in/${alum.linkedIn}" target="_blank">LinkedIn: @${alum.linkedIn}</a>
+        `;
+        cardsWrapper.appendChild(card);
     });
+
+    peopleWrapper.appendChild(cardsWrapper);
+    peopleWrapper.appendChild(document.createElement('br'));
 
     function reveal() {
         var reveals = document.querySelectorAll('.reveal');
