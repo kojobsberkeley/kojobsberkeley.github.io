@@ -38,7 +38,8 @@ i {
 /* Styling for the cards wrapper */
 .cards-wrapper {
     display: flex;
-    flex-wrap: wrap; /* Allow cards to wrap onto the next line */
+    flex-wrap: wrap; /*웹사이트 사이즈 조절*/
+    /* Allow cards to wrap onto the next line */
     justify-content: center; /* Center the cards horizontally */
     margin: 20px; /* Margin for the entire wrapper */
     max-width: calc(100% - 40px); /* Full width minus left and right margins */
@@ -68,7 +69,7 @@ i {
     margin-top: 30px;
     width: 100%; /* Make header full width */
     text-align: left;
-    background: white
+    background: blue
 }
 
 /* CSS for hidden state and transition effect */
@@ -108,4 +109,12 @@ body {
     padding: 50px;
     margin-top: 50px;
     text-align: center;
+}
+.bar{
+   
+    font-size: 30px;
+    max-width: 320px;
+    min-width: 320px;
+    background-color: navy;
+    color: white;
 }

@@ -3,18 +3,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Sample. Need to use csv file
     const alumni = [
-        { name: "John Smith", title: "Business", bio: "Google", linkedIn: "linkedin1", imageName: "image1.jpg", year: "2020" },
-        { name: "Emily Johnson", title: "Computer Science", bio: "Apple", linkedIn: "linkedin2", imageName: "image2.jpg", year: "2019" },
-        { name: "Michael Brown", title: "Data Science", bio: "Facebook", linkedIn: "linkedin3", imageName: "image3.jpg", year: "2018" },
-        { name: "Sarah Davis", title: "Business", bio: "Amazon", linkedIn: "linkedin4", imageName: "image4.jpg", year: "2018" },
-        { name: "Daniel Miller", title: "Computer Science", bio: "Netflix", linkedIn: "linkedin5", imageName: "image5.jpg", year: "2019" },
-        { name: "Olivia Wilson", title: "Business", bio: "Apple", linkedIn: "linkedin6", imageName: "image6.jpg", year: "2021" },
-        { name: "William Jones", title: "Data Science", bio: "Google", linkedIn: "linkedin7", imageName: "image7.jpg", year: "2020" },
-        { name: "Sophia Garcia", title: "Computer Science", bio: "Amazon", linkedIn: "linkedin8", imageName: "image8.jpg", year: "2019" },
-        { name: "James Martinez", title: "Business", bio: "Facebook", linkedIn: "linkedin9", imageName: "image9.jpg", year: "2022" },
-        { name: "Isabella Rodriguez", title: "Data Science", bio: "Netflix", linkedIn: "linkedin10", imageName: "image10.jpg", year: "2018" },
-        { name: "Benjamin Lee", title: "Computer Science", bio: "Amazon", linkedIn: "linkedin11", imageName: "image11.jpg", year: "2021" },
-        { name: "Charlotte Thomas", title: "Business", bio: "Google", linkedIn: "linkedin12", imageName: "image12.jpg", year: "2022" }
+        { name: "Dongho Eun", title: "Cognitive Science", bio: "Microsoft", linkedIn: "linkedin1", imageName: "image1.jpg", year: "2020" },
+        { name: "Yeongho Song", title: "SWE", bio: "Google", linkedIn: "linkedin2", imageName: "image2.jpg", year: "2019" },
+        { name: "Sojung Moon", title: "Business Anaylist", bio: "Goldman Sachs", linkedIn: "linkedin3", imageName: "image3.jpg", year: "2018" },
+        { name: "Woosung Jung", title: "SWE", bio: "Samsung", linkedIn: "linkedin4", imageName: "image4.jpg", year: "2018" },
+        { name: "Jinwoo Hong", title: "Cog Science", bio: "Amazon", linkedIn: "linkedin5", imageName: "image5.jpg", year: "2019" },
+        { name: "Doyoung Kim", title: "SWE", bio: "ZOOM", linkedIn: "linkedin6", imageName: "park.jpg", year: "2021" },
+        { name: "Jueun Kim", title: "Associate", bio: "Deloitte", linkedIn: "linkedin7", imageName: "image7.jpg", year: "2020" },
+        { name: "Chaewon Park", title: "BDM", bio: "SK", linkedIn: "linkedin8", imageName: "image8.jpg", year: "2019" },
+        { name: "Jungeun Lee", title: "Assurance staff", bio: "EY", linkedIn: "linkedin9", imageName: "image9.jpg", year: "2022" },
+        { name: "Jinwoo Yun", title: "Data Engineering", bio: "BOA", linkedIn: "linkedin10", imageName: "image10.jpg", year: "2018" },
+        { name: "Hyunchan Cho", title: "Business planning associate", bio: "LG", linkedIn: "linkedin11", imageName: "image11.jpg", year: "2021" },
+        { name: "Inwoo Cheon", title: "Unknown", bio: "Unknown", linkedIn: "linkedin12", imageName: "image12.jpg", year: "2022" }
         // ... more alumni ...
     ];
 
@@ -28,9 +28,10 @@ document.addEventListener('DOMContentLoaded', function() {
         card.className = 'card';
         card.innerHTML = `
             <div>
-                <img src="images/Temp/Staff_Card.jpg" alt="${alum.name}">
+            <img src="Images/${alum.imageName}" alt="${alum.name}">
             </div>
-            <h2>${alum.name}</h2>
+            <h2 class = "bar" >${alum.name}</h2>
+            
             <h3>${alum.title}</h3>
             <p>${alum.bio}</p>
             <a href="https://www.linkedin.com/in/${alum.linkedIn}" target="_blank">LinkedIn: @${alum.linkedIn}</a>
@@ -63,5 +64,5 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-// <img src="images/Temp/${alum.imageName}" alt="${alum.name}">
+//  <img src="images/Temp/${alum.imageName}" alt="${alum.name}">
 // <img src="images/Temp/Staff_Card.jpg" alt="${alum.name}">
